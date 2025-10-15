@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - Dhiya Al Khafigain</title>
+  <style>
+    :root {
+      --accent: #6d28d9;
+      --muted: #6b7280;
+      --bg: #f8fafc;
+      --card: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: var(--bg);
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 28px;
+    }
+
+    .cv {
+      width: 100%;
+      max-width: 1000px;
+      background: var(--card);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(2, 6, 23, 0.1);
+      display: grid;
+      grid-template-columns: 320px 1fr;
+    }
+
+    /* BAGIAN KIRI */
+    .left {
+      background: linear-gradient(180deg, var(--accent), #8b5cf6);
+      color: white;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 4px solid rgba(255, 255, 255, 0.2);
+      margin: 0 auto;
+    }
+
+    .photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .name {
+      text-align: center;
+      font-size: 22px;
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .role {
+      text-align: center;
+      opacity: 0.9;
+      font-size: 14px;
+    }
+
+    .contact {
+      background: rgba(255, 255, 255, 0.08);
+      padding: 12px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      font-size: 13px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    /* BAGIAN KANAN */
+    .right {
+      padding: 28px;
+    }
+
+    .section {
+      margin-bottom: 25px;
+    }
+
+    h1.title {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin-bottom: 12px;
+      line-height: 1.7;
+    }
+
+    .item {
+      margin-bottom: 14px;
+    }
+
+    .item h4 {
+      margin: 0;
+      font-size: 15px;
+      color: var(--accent);
+    }
+
+    .item span {
+      display: block;
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .card {
+      background: #fbfbff;
+      border: 1px solid #f1f5f9;
+      padding: 14px;
+      border-radius: 10px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 880px) {
+      .cv {
+        grid-template-columns: 1fr;
+      }
+
+      .left {
+        order: 2;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv">
+    <!-- BAGIAN KIRI -->
+    <aside class="left">
+      <div class="photo">
+        <!-- Ganti ke file lokal -->
+        <img src="Foto Dhiya.jpg" alt="Foto Profil">
+      </div>
+      <div class="name">Dhiya Al Khafigain</div>
+      <div class="role">Mahasiswa Teknik Informatika</div>
+
+      <div class="contact">
+        <p>📞 085860270285</p>
+        <p>✉️ dkhafigain@gmail.com</p>
+        <p>📍 Tasikmalaya, Indonesia</p>
+        <p>📷 <a href="https://www.instagram.com/dhiyalkhf" target="_blank" style="color: white; text-decoration: underline;">@dhiyalkhf</a></p>
+      </div>
+
+      <div>
+        <h4 style="font-size: 13px;">Keahlian</h4>
+        <div class="skills">
+          <div class="chip">Administrasi Perkantoran</div>
+          <div class="chip">Microsoft Word</div>
+          <div class="chip">Komunikasi & Kerja Tim</div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- BAGIAN KANAN -->
+    <main class="right">
+      <section class="section">
+        <h1 class="title">Tentang Saya</h1>
+        <p class="lead">
+          Saya merupakan mahasiswa Teknik Informatika angkatan 2024 yang saat ini sedang menjalani perkuliahan di semester 3.
+        </p>
+      </section>
+
+      <section class="section">
+        <h1 class="title">Pengalaman</h1>
+        <div class="item card">
+          <h4>Organisasi Siswa Intra Sekolah (OSIS)</h4>
+          <span>2 Periode</span>
+          <p style="color: var(--muted); margin-top: 6px;">
+            Aktif berkontribusi dalam kegiatan sekolah, mengatur event, dan melatih kepemimpinan selama dua periode.
+          </p>
+        </div>
+        <div class="item card">
+          <h4>Volunteer dan Event Eksternal</h4>
+          <p style="color: var(--muted); margin-top: 6px;">
+            Berpartisipasi dalam berbagai kegiatan sosial dan event eksternal sebagai panitia maupun relawan.
+          </p>
+        </div>
+        <div class="item card">
+          <h4>Kegiatan di Rumah</h4>
+          <p style="color: var(--muted); margin-top: 6px;">
+            Aktif di lingkungan rumah melalui organisasi Karang Taruna dan Irema.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h1 class="title">Pendidikan</h1>
+        <div class="item card">
+          <h4>SMKN 1 Tasikmalaya</h4>
+          <p style="color: var(--muted); margin-top: 6px;">
+            Lulus dari jurusan Manajemen Perkantoran yang berfokus pada administrasi, pengelolaan dokumen, dan komunikasi bisnis.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <h1 class="title">Minat</h1>
+        <div class="item card">
+          <p>📚 Membaca buku</p>
+          <p>🎬 Menonton</p>
+          <p>🏬 Mengelilingi toko buku / Gramedia</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
